@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Suit</title>
+    <link rel="stylesheet" href="suit.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Aplikasi Game Suit</h2>
+        <p>Pilih jenis permainan:</p>
+
+        <!-- Menu Utama -->
+        <div id="menu">
+            <button onclick="pilihGame(1)">1. Batu Gunting Kertas</button>
+            <button onclick="pilihGame(2)">2. Gajah Orang Semut</button>
+            <button onclick="pilihGame(3)">3. Suit Jari</button>
+        </div>
+
+        <!-- Area Game -->
+        <div id="game" class="d-none">
+            <h3 id="judulGame"></h3>
+            <p>Skor Kamu: <span id="skorUser">0</span> | Komputer: <span id="skorComp">0</span></p>
+            
+            <div id="tombolPilihan" class="grid-pilihan"></div>
+
+            <div id="hasil" class="d-none box-hasil">
+                <p id="pUserTeks"></p>
+                <p id="pCompTeks"></p>
+                <h4 id="teksHasil"></h4>
+            </div>
+
+            <button onclick="keMenu()">Kembali ke Menu</button>
+        </div>
+    </div>
+
+    <script src="suit.js"></script>
+</body>
+</html>
